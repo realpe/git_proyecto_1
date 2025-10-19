@@ -1,0 +1,110 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts % Permite comandos especiales
+
+% --- CONFIGURACIÓN MODERNA DE FUENTES (MANDATORIA) ---
+% Se utiliza fontspec y babel para manejar Unicode y fuentes modernas.
+% Esto reemplaza \usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage[spanish, bidi=basic, provide=*]{babel}
+
+% Configuración de fuentes Noto Sans (requerida por el entorno)
+\babelfont{rm}{Noto Sans} 
+\babelfont[spanish]{rm}{Noto Sans}
+\babelprovide[import, onchar=ids fonts]{spanish}
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Paquetes estándar
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref} 
+\usepackage{lipsum} % Añadido para generar texto de relleno si se necesita
+
+\begin{document}
+	
+	\title{Adelanto de Propuesta: Predicción del Uso Problemático de Internet (UPI) mediante IA}
+	
+	\author{
+		% Bloque 1 de Autor (Autor Principal/Supervisor)
+		\IEEEauthorblockN{Alejandra Forero}
+		\IEEEauthorblockA{Facultad Barberi de Ingenieria,\\ 
+			Diseño y Ciencias Aplicadas\\
+			Universidad ICESI\\
+			Santiago de Cali, Valle del Cauca\\
+			autor.a@universidad.com}
+		\and
+		% Bloque 2 de Autor
+		\IEEEauthorblockN{Jose Luis Realpe Muñoz}
+		\IEEEauthorblockA{Facultad Barberi de Ingenieria,\\ 
+			Diseño y Ciencias Aplicadas\\
+			Universidad ICESSI\\
+			Santiago de Cali, Valle del Cauca \\
+			joseluis.realpe@gmail.com}
+	}
+	
+	\maketitle
+	
+	\begin{abstract}
+		Este adelanto presenta el árbol de problemas y el planteamiento de objetivos para una investigación centrada en el uso problemático de internet (UPI) en jóvenes (5-22 años). El problema principal radica en la necesidad de identificar factores de riesgo, como la baja actividad física, para asegurar una intervención temprana efectiva. Proponemos el desarrollo de un modelo predictivo basado en Machine Learning  priorizando la Sensibilidad (Recall) en la detección del 'Alto Uso Problemático'. Este documento establece las bases conceptuales y metodológicas del trabajo.
+	\end{abstract}
+	
+	\begin{IEEEkeywords}
+		Uso Problemático de Internet, Machine Learning, Recall, Actividad Física, Propuesta, Avance.
+	\end{IEEEkeywords}
+	
+	\section{Árbol de Problemas y Justificación}
+	\label{sec:arbol}
+	
+	El problema central de este proyecto es la dificultad para \textbf{identificar los factores que inciden en el uso problemático de Internet (UPI) en jóvenes de 5 a 22 años}. 
+	
+	\subsection{Causas y Efectos}
+	
+	La causa raíz es la rápida transformación digital global, que lleva a un aumento intensivo del uso de Internet. Como efecto, observamos problemas de salud psicológica, física y social. Estudios previos, como el de \cite{referencia3}, han demostrado la correlación significativa entre la falta de actividad física y el riesgo de adicción a internet. 
+	
+	\subsection{Intervención Tecnológica}
+	
+	La intervención propuesta se centra en el uso de Inteligencia Artificial (IA) para abordar este desafío. Mediante modelos de Machine Learning, buscamos identificar a los jóvenes en la clase de 'Alto Uso Problemático' basándonos en variables de actividad y estado físico, permitiendo así la implementación de programas de intervención de mejora en los hábitos digitales.
+	
+	\section{Planteamiento y Objetivos}
+	\label{sec:objetivos}
+	
+	
+	
+	\subsection{Objetivo General}
+	
+	El objetivo general del trabajo es \textbf{identificar y predecir los factores que inciden en el UPI en la población de 5-22 años para facilitar programas de intervención focalizados}.
+	
+	\subsection{SMART (Metodología)}
+	
+	El objetivo específico y medible de la solución tecnológica (SMART) se define como:
+	
+	\begin{quote}
+		\textit{Diseñar un modelo predictivo que, utilizando variables de actividad y estado físico del Child Mind Institute, maximice la Sensibilidad (Recall $>$ 65\%) para la detección de la clase de 'Alto Uso Problemático' a entregar a finales de noviembre de 2025.}
+	\end{quote}
+	
+	La métrica de \textbf{Sensibilidad (Recall)} es la prioridad principal, tal como se aborda en \cite{referencia4}, para asegurar que la mayoría de los casos de alto riesgo sean efectivamente identificados y no omitidos.
+	
+	\section{Próximos Pasos}
+	\label{sec:pasos}
+	
+	Los próximos pasos incluyen la selección y preprocesamiento de los datos del Child Mind Institute, validacion y pruebas de modelos (considerando pipelines de imputación como en \cite{referencia5}), y la evaluación rigurosa del desempeño del Recall.
+	
+	
+	% --- BIBLIOGRAFÍA MANUAL (Adaptada para un adelanto conciso) ---
+	\begin{thebibliography}{5}
+		
+		\bibitem{referencia1}
+		Estudio longitudinal en adolescentes chinos, \emph{Frontiers in Psychology}, Jul. 2025, \url{https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1628586/full}.
+		
+		\bibitem{referencia3}
+		Estudio español, ``Uso problemático de Internet y adolescentes: el deporte sí importa,'' \emph{Dialnet}, \url{https://dialnet.unirioja.es/descarga/articulo/5841344.pdf}.
+		
+		\bibitem{referencia4}
+		Amadorosas, \emph{Child Mind Internet Use CatBoost Model} (Kaggle), \url{https://www.kaggle.com/code/amadorosas/child-mind-internet-use-catboost-model}.
+		
+		\bibitem{referencia5}
+		RM503, \emph{CMI-Problematic\_Internet\_Usage} (GitHub), \url{https://github.com/RM503/CMI-Problematic_Internet_Usage}.
+		
+	\end{thebibliography}
+	
+\end{document}
