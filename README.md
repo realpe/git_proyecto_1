@@ -15,7 +15,6 @@ El objetivo específico y medible de la solución tec-
 nológica (SMART) se define como:
 Diseñar un modelo predictivo que, utilizando
 variables de actividad y estado físico del Child
-Mind Institute, maximice la Sensibilidad (Recall
-> 65%) para la detección de la clase de ’Alto Uso
+Mind Institute, maximice la Sensibilidad (Recall > 65%) para la detección de la clase de ’Alto Uso
 Problemático’ a entregar a finales de noviembre
 de 2025.
